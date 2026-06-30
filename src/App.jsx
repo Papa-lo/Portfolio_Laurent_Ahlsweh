@@ -5,6 +5,7 @@ import Accueil from './pages/Accueil'//Import des 4 composants de pages
 import APropos from './pages/APropos'
 import Projets from './pages/Projets'
 import Contact from './pages/Contact'
+import './App.scss'//Importe style mise en page globale App
 
 
 const App = () => {//Création composant principal application
