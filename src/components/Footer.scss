@@ -1,0 +1,31 @@
+.main-footer {
+  background-color: #2C3E50;
+  padding: 1.5rem 2rem;//Espacement intérieur haut et bas.
+  margin-top: auto;
+}
+
+.main-footer__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-footer__text {
+  color: #FFFFFF;
+  font-size: 0.9rem;
+}
+
+.main-footer__links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.main-footer__links a {
+  color: #FFFFFF;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}

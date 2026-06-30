@@ -1,4 +1,5 @@
 import Header from './components/Header'//Import composant Header
+import Footer from './components/Footer'//Import composant Footer
 import { Routes, Route } from 'react-router-dom'//Import outils React Router pour associer une URL à une page
 import Accueil from './pages/Accueil'//Import des 4 composants de pages
 import APropos from './pages/APropos'
@@ -19,6 +20,8 @@ const App = () => {//Création composant principal application
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
+
+      <Footer/>
     </>
   )
 }
