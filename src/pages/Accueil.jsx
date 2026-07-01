@@ -10,7 +10,7 @@ const Accueil = () => {//Création composant page d'accueil
         <p className="hero_text">
           Bienvenu sur mon portfolio. Vous y trouverez mes projets de formation réalisés avec soin et découvrirez mon approche du développement Web : propre, accessible et pensé pour l'utilisateur.
         </p>
-        <NavLink to="/projets" className="hero_cta">
+        <NavLink to="/projets" className="hero_AcLink">
           Découvrir mes projets
         </NavLink>
       </div>
