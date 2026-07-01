@@ -1,0 +1,64 @@
+.projet-detail {
+  flex-grow: 1;
+  padding: 4rem 2rem;
+  background-color: #FFFFFF;
+}
+
+.projet-detail_container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.projet-detail_container h2 {
+  color: #2C3E50;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #E74C3C;
+  padding-bottom: 0.5rem;
+}
+
+.projet-detail_description {
+  color: #4A4A4A;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.projet-detail_tech {
+  margin-bottom: 2rem;
+}
+
+.projet-detail_tech h3 {
+  color: #2C3E50;
+  margin-bottom: 0.5rem;
+}
+
+.projet-detail_tech ul {
+  display: flex;
+  flex-wrap: wrap; //Passe à la ligne sur petit écran
+  gap: 1rem;
+}
+
+.projet-detail_tech li {//Style pastilles technologies
+  background-color: #F8F9FA;
+  color: #2C3E50;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.projet-detail_links {//Espace entre lien GitHub et lien retour
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.projet-detail_links a {//Style pour liens
+  color: #E74C3C;
+  font-weight: 600;
+}
+
+.projet-detail_links a:hover {
+  text-decoration: underline;
+}

@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom'
+import projetsData from '../data/projetsData'//Import données
 import './Projets.scss'
 
 const Projets = () => {
@@ -9,24 +11,20 @@ const Projets = () => {
         <h2>Mes projets de formation</h2>
 
         <div className="projets_grid">
-          
-          <article className="projet_card">
-            <h3>Nina Carducci</h3>
-            <p>Optimisation complète du référencement naturel (SEO) et mise en conformité avec les normes d'accessibilité (WCAG) d'un site de photographe.</p>
 
-            <a href="https://github.com/Papa-lo/Nina-Carducci" target="_blank" rel="noopener noreferrer">
-              Voir le code sur GitHub
-            </a>
-          </article>
+            {projetsData.map((projet) => (
+              
+              <article className="projet_card" key={projet.id}>
+                
+                <h3>{projet.titre}</h3>
+                <p>{projet.description}</p>
+                
+                <NavLink to={`/projets/${projet.slug}`}>
+                  Voir les détails du projet
+                </NavLink>
 
-          <article className="projet_card">
-            <h3>Mon Vieux Grimoire</h3>
-            <p>Développement d'une application de notation de livres avec gestion d'une base de données MongoDB et mise en place de mesures de sécurité en backend.</p>
-
-            <a href="https://github.com/Papa-lo/VieuxGrimoire" target="_blank" rel="noopener noreferrer">
-              Voir le code sur GitHub
-            </a>
-          </article>
+              </article>
+            ))}
 
         </div>
       </div>
