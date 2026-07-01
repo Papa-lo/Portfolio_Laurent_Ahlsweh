@@ -1,4 +1,4 @@
-import './APropos.scss'
+import "../styles/APropos.scss"
 
 const APropos = () => {//Création composant page A propos
 

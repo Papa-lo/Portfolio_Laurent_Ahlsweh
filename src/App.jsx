@@ -1,12 +1,12 @@
-import Header from './components/Header'//Import composant Header
-import Footer from './components/Footer'//Import composant Footer
-import { Routes, Route } from 'react-router-dom'//Import outils React Router pour associer une URL à une page
-import Accueil from './pages/Accueil'//Import des 4 composants de pages
-import APropos from './pages/APropos'
-import Projets from './pages/Projets'
-import Contact from './pages/Contact'
-import ProjetDetail from './pages/ProjetDetail'
-import './App.scss'//Importe style mise en page globale App
+import Header from "./components/Header"//Import composant Header
+import Footer from "./components/Footer"//Import composant Footer
+import { Routes, Route } from "react-router-dom"//Import outils React Router pour associer une URL à une page
+import Accueil from "./pages/Accueil"//Import des 4 composants de pages
+import APropos from "./pages/APropos"
+import Projets from "./pages/Projets"
+import Contact from "./pages/Contact"
+import ProjetDetail from "./pages/ProjetDetail"
+import "./styles/App.scss"//Importe style mise en page globale App
 
 
 const App = () => {//Création composant principal application

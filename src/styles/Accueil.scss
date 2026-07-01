@@ -1,0 +1,46 @@
+.hero {//Ciblage  Hero pour prendre tout l'espace dispo
+  flex-grow: 1;//Centre contenu milieu écran
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F8F9FA;
+  padding: 4rem 2rem;
+
+  &_container {
+    text-align: center;
+    max-width: 800px;
+  }
+
+  &_title {
+    color: #2C3E50;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &_subtitle {
+    color: #4A4A4A;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+  }
+
+  &_text {
+    color: #1A1A1A;
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.8;//Interligne aéré pour lecture (Accessibilité)
+  }
+
+  &_AcLink {
+    background-color: #E74C3C;
+    color: #FFFFFF;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #C0392B;
+    }
+  }
+}

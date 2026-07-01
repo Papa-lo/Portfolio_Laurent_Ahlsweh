@@ -1,5 +1,5 @@
-import { NavLink } from 'react-router-dom'
-import './Accueil.scss'
+import { NavLink } from "react-router-dom"
+import "../styles/Accueil.scss"
 
 const Accueil = () => {//Création composant page d'accueil
   return (//Retourne contenu HTML de ma page

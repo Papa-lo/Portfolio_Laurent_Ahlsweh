@@ -1,6 +1,6 @@
-import { useParams, Link } from 'react-router-dom'//Importe useParams pour récupérer la variable "slug" présente dans l'URL
-import projetsData from '../data/projetsdata'//Import tableau de données
-import './ProjetDetail.scss'
+import { useParams, Link } from "react-router-dom"//Importe useParams pour récupérer la variable "slug" présente dans l'URL
+import projetsData from "../data/projetsdata"//Import tableau de données
+import "../styles/ProjetDetail.scss"
 
 const ProjetDetail = () => {
   const { slug } = useParams()//Déstructure useParams pour extraire directement "slug" Si URL = /projets/nina-carducci, slug contiendra "nina-carducci"

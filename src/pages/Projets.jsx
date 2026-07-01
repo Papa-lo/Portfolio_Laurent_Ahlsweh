@@ -1,6 +1,6 @@
-import { NavLink } from 'react-router-dom'
-import projetsData from '../data/projetsData'//Import données
-import './Projets.scss'
+import { NavLink } from "react-router-dom"
+import projetsData from "../data/projetsData"//Import données
+import "../styles/Projets.scss"
 
 const Projets = () => {
   return (
