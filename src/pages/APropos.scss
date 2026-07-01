@@ -1,0 +1,33 @@
+.a-propos {//Prendre espace entre header et footer
+  flex-grow: 1;
+  padding: 4rem 2rem;
+  background-color: #FFFFFF;
+}
+
+.a-propos_container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.a-propos_container h2 {
+  color: #2C3E50;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #E74C3C;//déco titre
+  padding-bottom: 0.5rem;
+}
+
+.a-propos_acte {//Style actes
+  margin-bottom: 2rem;
+}
+
+.a-propos_acte h3 {//Titres actes
+  color: #2C3E50;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.a-propos_acte p {//Texte actes
+  color: #4A4A4A;
+  line-height: 1.7; //Aération texte pour accessibilité
+}
