@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async'//Import Helmet modifie titre et description onglet.
+import { Helmet } from 'react-helmet-async'//Gestionnaire méta-données.
 import "../styles/APropos.scss"
 
 const APropos = () => {//Création composant page A propos

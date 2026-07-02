@@ -11,6 +11,11 @@ const ProjetDetail = () => {
   if (!projetTrouve) {//Si user tape URL fausse, projetTrouve : indéfini
     return (
       <section className="projet-detail">
+
+        <Helmet>
+          <title>Projet non trouvé | Portfolio</title>
+        </Helmet>
+
         <div className="projet-detail_container">
           <h2>Projet non trouvé</h2>
           <p>Ce projet n'existe pas dans mon portfolio.</p>
