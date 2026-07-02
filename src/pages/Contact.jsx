@@ -1,4 +1,6 @@
 import "../styles/Contact.scss"
+import TextField from '@mui/material/TextField'//Composant MUI pour champs formulaire (accessibilité)
+import Button from '@mui/material/Button'//Composant MUI pour boutons
 
 const Contact = () => {
   return (
@@ -11,25 +13,48 @@ const Contact = () => {
         <form className="contact_form" action="#" method="POST">
           
           <div className="contact_field">{/*field : champ*/}
-            <label htmlFor="nom">Votre nom</label>
-            <input type="text" id="nom" name="nom" required />
+            {/*Groupe Nom - MUI gère label automatiquement*/}
+            <TextField
+              id="nom"
+              name="nom"
+              label="Votre nom"
+              variant="standard"
+              required
+              fullWidth
+            />
           </div>
 
           <div className="contact_field">
-            <label htmlFor="email">Votre adresse e-mail</label>
-            <input type="email" id="email" name="email" required />
+            <TextField
+              id="email"
+              name="email"
+              label="Votre adresse e-mail"
+              type="email"
+              variant="standard"
+              required
+              fullWidth
+            />
           </div>
 
           <div className="contact_field">
-            <label htmlFor="message">Votre message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <TextField
+              id="message"
+              name="message"
+              label="Votre message"
+              variant="standard"
+              multiline
+              rows={5}
+              required
+              fullWidth
+            />
           </div>
 
-          <button type="submit" className="contact_bouton">
+          <Button type="submit" variant="contained" className="contact_bouton">
             Envoyer le message
-          </button>
+          </Button>
 
         </form>
+        
       </div>
     </section>
   )

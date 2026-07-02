@@ -16,48 +16,46 @@
     }
   }
 
-  &_form {
+  &_form {//Formulaire
     margin-bottom: 2rem;
   }
 
-  &_field {
+  &_field {//Champ
     margin-bottom: 1.5rem;
 
-    label {
-      display: block;
-      margin-bottom: 0.5rem;
+    .MuiInputBase-root {//Ciblage champ saisie MUI
+      width: 100%;
+      padding: 0.8rem 0;
+      font-family: inherit;
+      font-size: 1rem;
+      color: #1A1A1A;
+    }
+
+    .MuiInput-underline:before {//Ciblage ligne bas champ "standard" MUI
+      border-bottom: 1px solid #CCCCCC;
+    }
+
+    .MuiInput-underline:after {//Ciblage trait focus (quand user clique) - Accessibilité
+      border-bottom: 2px solid #2C3E50;
+    }
+
+    .MuiInputLabel-root {//Ciblage label MUI
       color: #2C3E50;
       font-weight: 600;
     }
-
-    input, //Style inputs et textarea
-    textarea {
-      width: 100%;
-      padding: 0.8rem;
-      border: 1px solid #CCCCCC;
-      border-radius: 4px;
-      font-family: inherit;
-      font-size: 1rem;
-
-      &:focus {//Effet focus (quand l'user clique dans champ) - accessibilité clavier
-        outline: none;//Enlève bordure par défaut
-        border: 2px solid #2C3E50;//Met bordure couleur du site
-      }
-    }
   }
 
-  &_bouton {
+  .contact_bouton {//Ciblage bouton MUI
     background-color: #E74C3C;
     color: #FFFFFF;
     padding: 0.8rem 2rem;
-    border: none;
     border-radius: 4px;
     font-size: 1rem;
     font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    text-transform: none;//Empêche MUI de mettre tout en majuscules
+    margin-top: 1rem;
 
-    &:hover {
+    &:hover {//Survol
       background-color: #C0392B;
     }
   }

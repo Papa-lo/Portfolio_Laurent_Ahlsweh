@@ -1,4 +1,8 @@
 /* Reset CSS de base pour harmoniser les navigateurs */
+html {//Force affichage barre défil
+  overflow-y: scroll;
+}
+
 *,
 *::before,
 *::after {
