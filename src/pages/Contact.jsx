@@ -2,8 +2,10 @@ import "../styles/Contact.scss"
 import TextField from '@mui/material/TextField'//Composant MUI pour champs formulaire (accessibilité)
 import Button from '@mui/material/Button'//Composant MUI pour boutons
 import { useState } from 'react'//Import useState "mémoires" champs formulaire
+import { Helmet } from 'react-helmet-async'//Import Helmet modifie titre et description onglet.
 
 const Contact = () => {
+
   const [nom, setNom] = useState('')//Création variable d'état (state) pour nom. 'nom' => valeur, 'setNom' => la modifier. State vide par défaut.
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
@@ -42,6 +44,12 @@ const Contact = () => {
   return (
 
     <section className="contact">
+
+      <Helmet>
+        <title>Contact | Laurent Ahlsweh - Développeur Web Junior</title>
+        <meta name="description" content="Contactez Laurent Ahlsweh, développeur web junior, pour discuter de vos projets web, d'opportunités de stage ou d'alternance." />
+      </Helmet>
+
       <div className="contact_container">
         
         <h2>Me contacter</h2>

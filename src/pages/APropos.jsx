@@ -1,9 +1,16 @@
+import { Helmet } from 'react-helmet-async'//Import Helmet modifie titre et description onglet.
 import "../styles/APropos.scss"
 
 const APropos = () => {//Création composant page A propos
 
   return (
     <section className="a-propos">
+
+      <Helmet>
+        <title>À propos | Laurent Ahlsweh - Développeur Web Junior</title>
+        <meta name="description" content="Découvrez le parcours de reconversion de Laurent Ahlsweh, développeur web junior passionné par le code propre, le SEO et l'accessibilité numérique." />
+      </Helmet>
+
       <div className="a-propos_container">
         <h2>A propos de moi</h2>
         <article className="a-propos_acte">

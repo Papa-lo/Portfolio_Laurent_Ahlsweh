@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom"//Importe useParams pour récupérer la variable "slug" présente dans l'URL
+import { Helmet } from 'react-helmet-async'//Import Helmet modifie titre et description onglet.
 import projetsData from "../data/projetsdata"//Import tableau de données
 import "../styles/ProjetDetail.scss"
 
@@ -22,6 +23,11 @@ const ProjetDetail = () => {
   return (//Si projet trouvé, affiche détails
     <article className="projet-detail">
       <div className="projet-detail_container">
+
+        <Helmet>
+          <title>{projetTrouve.titre} | Portfolio Laurent Ahlsweh</title>{/*Helmet dynamique*/}
+          <meta name="description" content={projetTrouve.description} />{/*Utilise description projet dynamiquement*/}
+        </Helmet>
         
         <h2>{projetTrouve.titre}</h2>
         <p className="projet-detail_description">{projetTrouve.description}</p>
