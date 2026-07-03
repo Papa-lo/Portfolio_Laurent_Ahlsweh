@@ -4,7 +4,7 @@ const helmet = require('helmet')//Import Helmet (protection serveur qui cache in
 
 const app = express()//Initialise Express
 app.use(helmet())//Mets le casque de sécurité
-app.use(cors())//Active videur (Cors) => autorise échanges
+app.use(cors({ origin: 'https://portfolio-laurent-ahlsweh.vercel.app' }))//Active videur (Cors) => autorise échanges
 app.use(express.json())//Traducteur Express JSON
 
 app.get('/api/test', (req, res) => {//Route TEST
