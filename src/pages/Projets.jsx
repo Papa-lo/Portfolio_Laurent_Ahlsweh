@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 import { Helmet } from 'react-helmet-async'//Import Helmet modifie titre et description onglet.
-import projetsData from "../data/projetsData"//Import données
+import projetsData from "../data/projetsdata"//Import données
 import "../styles/Projets.scss"
 
 const Projets = () => {
