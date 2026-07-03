@@ -17,7 +17,7 @@ const Contact = () => {
     const donneesAEnvoyer = { nom, email, message }//Rassemble les 3 mémoires dans un objet JavaScript
 
     try {
-      const reponse = await fetch('http://localhost:4000/api/contact', {//Envoie au serveur Backend
+      const reponse = await fetch('https://portfolio-laurent-ahlsweh.onrender.com', {//Envoie au serveur Backend
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(donneesAEnvoyer)//Transforme objet en texte
