@@ -30,7 +30,7 @@ app.post('/api/contact', (req, res) => {//Route données formulaire
   res.status(200).json({ succes: "Votre message a été envoyé avec succès !" })
 })
 
-const PORT = 4000//Choix port sur lequel serveur écoute (4000)
+const PORT = process.env.PORT
 
 app.listen(PORT, () => {//Allume serveur
   console.log(`Le serveur est allumé sur http://localhost:${PORT}`)//Message terminal quand serveur prêt
