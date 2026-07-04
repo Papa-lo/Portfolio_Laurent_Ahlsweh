@@ -15,27 +15,27 @@ const APropos = () => {//Création composant page A propos
         <h2>A propos de moi</h2>
         <article className="a-propos_acte">
           <h3>Qui suis-je ?</h3>
-          <p>Bonjour, je suis Laurent Ahlsweh, développeur web junior passionné par la création d'applications accessibles et performantes.</p>
+          <p>Bonjour, je suis Laurent Ahlsweh, développeur web junior. Après plus de 20 ans de carrière dans le bâtiment, j'ai choisi de relever le défi de la programmation pour allier ma nouvelle passion à un nouveau domaine d'expertise.</p>
         </article>
         <article className="a-propos_acte">
           <h3>Mon parcours</h3>
-          <p>Issue d'une reconversion professionnelle, j'ai choisi le développement web pour allier logique et créativité. Ma formation chez OpenClassrooms m'a permis d'acquérir une solide méthode de travail.</p>
+          <p>Ma curiosité pour le code remonte aux années 90, sur un Amstrad 6128, où j'ai passé des heures à apprendre le langage Basic. Cette passion enfantine, mise en veille pendant ma carrière professionnelle, s'est révélée être mon véritable point d'ancrage lors de ma reconversion chez OpenClassrooms.</p>
         </article>
         <article className="a-propos_acte">
           <h3>Mon expertise technique</h3>
-          <p>Je maîtrise HTML, CSS, JavaScript, React, Node.js et les bases de données. Mon attention se porte particulièrement sur l'optimisation SEO et le respect des normes d'accessibilité.</p>
+          <p>Mon profil se caractérise par une double compétence : une solide maîtrise du Front-End avec React et Sass, couplée à une véritable obsession pour la qualité : l'UX (je refuse les interfaces confuses) et la Sécurité (comprendre comment les architectures se protègent de l'intérieur). J'ai aussi intégré des librairies comme MUI en gardant une architecture de code strictement propre.</p>
         </article>
         <article className="a-propos_acte">
           <h3>Mes réalisations clés</h3>
-          <p>Mon projet "Nina Carducci" démontre ma capacité à optimiser le SEO et l'accessibilité d'un site existant. "Mon Vieux Grimoire" prouve ma capacité à gérer une base de données et la sécurité en backend.</p>
+          <p>Le projet dont je suis le plus fier est « Nina Carducci ». L'enjeu n'était pas seulement de coder, mais de prendre un site existant et de le rendre parfaitement conforme aux normes SEO et d'Accessibilité (WCAG). Un autre défi technique majeur fut la planification complète d'un site complexe (Menu Maker), qui m'a appris à structurer ma pensée face à une multitude d'outils.</p>
         </article>
         <article className="a-propos_acte">
           <h3>Ma façon de travailler</h3>
-          <p>J'ai une approche pragmatique : pas de fioritures inutiles, du code propre, sémantique et pensé pour l'utilisateur avant tout. Je crois qu'un bon site est un site simple et efficace.</p>
+          <p>Ce qui me passionne dans le développement, c'est l'honnêteté du code. Contrairement à d'autres domaines où le discours peut masquer un manque de fond, ici, si la logique n'est pas solide, un œil expert le remarquera immédiatement. Je privilegie donc un code propre, lisible, et pensé pour durer.</p>
         </article>
         <article className="a-propos_acte">
           <h3>Mes ambitions</h3>
-          <p>Je recherche un poste de développeur web junior au sein d'une équipe bienveillante, où je pourrai continuer à progresser sur des projets concrets et structurés.</p>
+          <p>Mon objectif est d'intégrer une équipe bienveillante où je pourrai mettre ma rigueur et ma fraîcheur au service de projets concrets, et poursuivre cette seconde partie de ma vie professionnelle avec la même énergie que la première.</p>
         </article>
       </div>
     </section>

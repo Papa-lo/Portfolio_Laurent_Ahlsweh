@@ -62,3 +62,23 @@
     }
   }
 }
+
+.projet-detail_fiche {//Style fiche projet détaillée
+  background-color: #F8F9FA;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+
+  h3 {//Style du titre
+    color: #2C3E50;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #E74C3C;
+    padding-bottom: 0.5rem;
+  }
+
+  p {  //Style paragraphes
+    color: #4A4A4A;
+    line-height: 1.7;
+    margin-bottom: 0.8rem;
+  }
+}

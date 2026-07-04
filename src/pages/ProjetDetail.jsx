@@ -46,6 +46,16 @@ const ProjetDetail = () => {
           </ul>
         </div>
 
+        <div className="projet-detail_fiche">
+          <h3>Analyse du projet</h3>
+          
+          <p><strong>Contexte :</strong> {projetTrouve.contexte}</p>
+          <p><strong>Objectifs :</strong> {projetTrouve.objectifs}</p>
+          <p><strong>Compétences développées :</strong> {projetTrouve.competences}</p>
+          <p><strong>Résultats :</strong> {projetTrouve.resultats}</p>
+          <p><strong>Perspectives d'amélioration :</strong> {projetTrouve.perspectives}</p>
+        </div>
+
         <div className="projet-detail_links">
           <a href={projetTrouve.github} target="_blank" rel="noopener noreferrer">
             Voir le code source sur GitHub
