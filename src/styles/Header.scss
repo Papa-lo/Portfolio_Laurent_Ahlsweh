@@ -10,9 +10,10 @@
     margin: 0 auto;
 
     &__logo {
-      color: #FFFFFF;
-      font-size: 1.5rem;
-      font-weight: bold;
+      &_img {
+        height: 45px;
+        width: auto;
+      }
     }
 
     &__list {

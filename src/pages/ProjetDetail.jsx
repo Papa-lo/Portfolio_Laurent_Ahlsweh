@@ -34,6 +34,7 @@ const ProjetDetail = () => {
           <meta name="description" content={projetTrouve.description} />{/*Utilise description projet dynamiquement*/}
         </Helmet>
         
+        <img src={projetTrouve.image} alt={`Capture d'écran du projet ${projetTrouve.titre}`} className="projet-detail_screenshot" />
         <h2>{projetTrouve.titre}</h2>
         <p className="projet-detail_description">{projetTrouve.description}</p>
         

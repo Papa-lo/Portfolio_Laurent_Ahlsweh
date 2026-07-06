@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async'//Import Helmet pour SEO
-import '../styles/Competences.scss'
+import "../styles/Competences.scss"
 
 const Competences = () => {//Création tableau
   const categoriesDeCompetences = [

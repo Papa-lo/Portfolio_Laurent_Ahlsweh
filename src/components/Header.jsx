@@ -6,9 +6,9 @@ const Header = () => {
     <header className="main-header">
       <nav className="main-nav" aria-label="Navigation principale">
         
-        <NavLink to="/" className="main-nav__logo">
-          Laurent Ahlsweh
-        </NavLink>
+          <NavLink to="/" className="main-nav__logo">
+            <img src="/images/MonLogo.webp" alt="Logo de Laurent Ahlsweh" className="main-nav__logo_img" />
+          </NavLink>
 
         <ul className="main-nav__list">
           <li>
