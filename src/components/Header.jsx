@@ -27,6 +27,11 @@ const Header = () => {
             </NavLink>
           </li>
           <li>
+            <NavLink to="/Competences" className={({ isActive }) => isActive ? "main-nav__link active" : "main-nav__link"}>
+            Compétences
+            </NavLink>
+          </li>
+          <li>
             <NavLink to="/contact" className={({ isActive }) => isActive ? "main-nav__link active" : "main-nav__link"}>
               Contact
             </NavLink>

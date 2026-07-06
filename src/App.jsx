@@ -6,6 +6,7 @@ import APropos from "./pages/APropos"
 import Projets from "./pages/Projets"
 import Contact from "./pages/Contact"
 import ProjetDetail from "./pages/ProjetDetail"
+import Competences from "./pages/Competences"
 import "./styles/App.scss"//Importe style mise en page globale App
 
 
@@ -20,6 +21,7 @@ const App = () => {//Création composant principal application
           <Route path="/a-propos" element={<APropos />} />
           <Route path="/projets/:slug" element={<ProjetDetail />} />{/*Route dynamique : " :slug " = "n'importe quel texte ici, je le récupérerai dans le composant" */}
           <Route path="/projets" element={<Projets />} />
+          <Route path="/Competences" element={<Competences/>} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>

@@ -1,0 +1,54 @@
+.competences {
+  flex-grow: 1;//Prend espace dispo
+  padding: 4rem 2rem;
+  background-color: #F8F9FA;//Fond gris clair (alternance avec les autres pages)
+
+  &_container {
+    max-width: 1000px;//Plus large pour les colonnes
+    margin: 0 auto;
+
+    h2 {//Style titre
+      color: #2C3E50;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      border-bottom: 2px solid #E74C3C;
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  &_grid {//Grille cartes
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));//S'adapte en colonnes
+    gap: 2rem;
+  }
+
+  &_categorie {//Style cartes catégorie
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+
+    h3 {//style titre catégorie
+      color: #2C3E50;
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid #EEEEEE;
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  &_liste {//style liste pastilles
+    display: flex;
+    flex-wrap: wrap;//Retour à la ligne si nécessaire
+    gap: 0.8rem;
+
+    li {//style pastille
+      background-color: #F8F9FA;
+      color: #2C3E50;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+  }
+}
