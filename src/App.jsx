@@ -1,6 +1,6 @@
 import Header from "./components/Header"//Import composant Header
 import Footer from "./components/Footer"//Import composant Footer
-import { Routes, Route } from "react-router-dom"//Import outils React Router pour associer une URL à une page
+import { Routes, Route, useLocation, useEffect } from "react-router-dom"//Import outils React Router pour associer une URL à une page
 import Accueil from "./pages/Accueil"//Import des 4 composants de pages
 import APropos from "./pages/APropos"
 import Projets from "./pages/Projets"
@@ -11,6 +11,12 @@ import "./styles/App.scss"//Importe style mise en page globale App
 
 
 const App = () => {//Création composant principal application
+
+  const emplacementActuel = useLocation()//Récupère URL barre adresse
+  useEffect(() => {//Chaque changement URL, remonte
+    window.scrollTo({ top: 0, behavior: 'smooth' })//Défilement fluide
+  }, [emplacementActuel]) //Seulement si URL change
+
   return (
     <>
       <Header />{/*Affiche Header*/}
