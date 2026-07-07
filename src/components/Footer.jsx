@@ -14,7 +14,7 @@ const Footer = () => {//Création composant Footer
           </li>
 
           <li>
-            <a href="https://www.linkedin.com/in/Papa-lo/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/laurent-ahlsweh-08a9ab329/" target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a>
           </li>

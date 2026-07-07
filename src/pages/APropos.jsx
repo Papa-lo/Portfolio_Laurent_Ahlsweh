@@ -15,11 +15,11 @@ const APropos = () => {//Création composant page A propos
         <h2>A propos de moi</h2>
         <article className="a-propos_acte">
           <h3>Qui suis-je ?</h3>
-          <p>Bonjour, je suis Laurent Ahlsweh, développeur web junior. Après plus de 20 ans de carrière dans le bâtiment, j'ai choisi de relever le défi de la programmation pour allier ma nouvelle passion à un nouveau domaine d'expertise.</p>
+          <p>Né "un peu" avant l’an 2000, les technologies informatiques et leurs évolutions ont toujours suscité un grand intérêt pour moi. Après plus de 20 ans de carrière dans le bâtiment, j'ai choisi de relever le défi de me reconvertir dans la programmation pour allier mes centres d’intérêt à un nouveau domaine d'expertise.</p>
         </article>
         <article className="a-propos_acte">
           <h3>Mon parcours</h3>
-          <p>Ma curiosité pour le code remonte aux années 90, sur un Amstrad 6128, où j'ai passé des heures à apprendre le langage Basic. Cette passion enfantine, mise en veille pendant ma carrière professionnelle, s'est révélée être mon véritable point d'ancrage lors de ma reconversion chez OpenClassrooms.</p>
+          <p>Ma curiosité pour le code remonte aux années 90, sur un Amstrad 6128, où j'ai passé des heures à apprendre le langage Basic. Cette passion enfantine, mise en veille pendant ma carrière professionnelle, s'est révélée être un véritable point d'ancrage lors de ma reconversion professionnelle.</p>
         </article>
         <article className="a-propos_acte">
           <h3>Mon expertise technique</h3>
@@ -35,7 +35,7 @@ const APropos = () => {//Création composant page A propos
         </article>
         <article className="a-propos_acte">
           <h3>Mes ambitions</h3>
-          <p>Mon objectif est d'intégrer une équipe bienveillante où je pourrai mettre ma rigueur et ma fraîcheur au service de projets concrets, et poursuivre cette seconde partie de ma vie professionnelle avec la même énergie que la première.</p>
+          <p>Mon objectif est d'intégrer une équipe enthousiaste avec laquelle je pourrai mettre ma rigueur et ma créativité au service de projets concrets, et poursuivre cette seconde partie de ma vie professionnelle avec la même énergie que la première.</p>
         </article>
       </div>
     </section>
