@@ -1,14 +1,14 @@
 import Header from "./components/Header"//Import composant Header
 import Footer from "./components/Footer"//Import composant Footer
 import { useEffect } from "react";
-import { Routes, Route, useLocation } from "react-router-dom"//Import outils React Router pour associer une URL à une page
+import { Routes, Route, useLocation } from "react-router-dom"//Import outils React Router
 import Accueil from "./pages/Accueil"//Import des 4 composants de pages
 import APropos from "./pages/APropos"
 import Projets from "./pages/Projets"
 import Contact from "./pages/Contact"
 import ProjetDetail from "./pages/ProjetDetail"
 import Competences from "./pages/Competences"
-import "./styles/App.scss"//Importe style mise en page globale App
+import "./styles/App.scss"
 
 
 const App = () => {//Création composant principal application

@@ -1,5 +1,5 @@
-import { useParams, Link } from "react-router-dom"//Importe useParams pour récupérer la variable "slug" présente dans l'URL
-import { Helmet } from 'react-helmet-async'//Import Helmet modifie titre et description onglet.
+import { useParams, Link } from "react-router-dom"//Import useParams pour récupérer la variable "slug" présente dans l'URL
+import { Helmet } from 'react-helmet-async'//Import Helmet.
 import projetsData from "../data/projetsData"//Import tableau de données
 import "../styles/ProjetDetail.scss"
 

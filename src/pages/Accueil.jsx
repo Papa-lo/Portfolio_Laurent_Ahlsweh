@@ -1,12 +1,12 @@
 import { NavLink } from "react-router-dom"
-import { Helmet } from 'react-helmet-async'//Import Helmet modifie titre et description onglet.
+import { Helmet } from 'react-helmet-async'//Gestionnaire méta-données.
 import "../styles/Accueil.scss"
 
-const Accueil = () => {//Création composant page d'accueil
-  return (//Retourne contenu HTML de ma page
+const Accueil = () => {//Création composant accueil
+  return (//Retourne contenu HTML page
     <section className="hero">
 
-      <Helmet>{/*Helmet modifie les balises <head> HTML pour SEO CETTE page*/}
+      <Helmet>{/*Helmet modifie les balises <head> HTML pour SEO*/}
         <title>Laurent Ahlsweh | Développeur Web Junior React & Accessibilité</title>{/*Titre onglet navigateur et résultats Google*/}
         <meta name="description" content="Portfolio de Laurent Ahlsweh, développeur web junior spécialisé en React, Node.js, SEO et accessibilité (WCAG). Découvrez mes projets et mon approche technique." />
       </Helmet>

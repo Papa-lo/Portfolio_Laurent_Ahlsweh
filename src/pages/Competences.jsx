@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async'//Import Helmet pour SEO
+import { Helmet } from "react-helmet-async"//Gestionnaire méta-données.
 import "../styles/Competences.scss"
 
 const Competences = () => {//Création tableau

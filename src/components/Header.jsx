@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom"//Composant liens sans recharge page.
-import "../styles/Header.scss"//Importe mon fichier SCSS pour le style de ce composant.
+import { NavLink } from "react-router-dom"//Composant liens sans recharge page (SPA).
+import "../styles/Header.scss"
 
 const Header = () => {
   return (

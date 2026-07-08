@@ -1,10 +1,10 @@
-const express = require('express')//Import Express, framework pour créer le serveur
-const cors = require('cors')//Import Cors pour autoriser Frontend (port 5173) à parler au Backend (port 4000)
+const express = require('express')//Import Express
+const cors = require('cors')//Import Cors
 const helmet = require('helmet')//Import Helmet (protection serveur qui cache infos)
 
 const app = express()//Initialise Express
-app.use(helmet())//Mets le casque de sécurité
-app.use(cors({ origin: 'https://portfolio-laurent-ahlsweh.vercel.app' }))//Active videur (Cors) => autorise échanges
+app.use(helmet())//Mets le "casque"
+app.use(cors({ origin: 'https://portfolio-laurent-ahlsweh.vercel.app' }))//Active "videur" (Cors) => autorise échanges
 app.use(express.json())//Traducteur Express JSON
 
 app.get('/api/test', (req, res) => {//Route TEST

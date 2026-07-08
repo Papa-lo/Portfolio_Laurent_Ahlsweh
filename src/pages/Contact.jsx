@@ -2,11 +2,11 @@ import "../styles/Contact.scss"
 import TextField from '@mui/material/TextField'//Composant MUI pour champs formulaire (accessibilité)
 import Button from '@mui/material/Button'//Composant MUI pour boutons
 import { useState } from 'react'//Import useState "mémoires" champs formulaire
-import { Helmet } from 'react-helmet-async'//Import Helmet modifie titre et description onglet.
+import { Helmet } from 'react-helmet-async'//Import Helmet gestionnaire méta-données (modifie titre et description onglet).
 
 const Contact = () => {
 
-  const [nom, setNom] = useState('')//Création variable d'état (state) pour nom. 'nom' => valeur, 'setNom' => la modifier. State vide par défaut.
+  const [nom, setNom] = useState('')//Création variable d'état (state) pour nom. 'nom' => valeur, 'setNom' => la modifier.State vide par défaut.
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
   const [feedback, setFeedback] = useState('')
@@ -14,7 +14,7 @@ const Contact = () => {
   const handleSubmit = async (evenement) => {//Fonction au CLICK
     evenement.preventDefault()//Empêche rechargement page
 
-    const donneesAEnvoyer = { nom, email, message }//Rassemble les 3 mémoires dans un objet JavaScript
+    const donneesAEnvoyer = { nom, email, message }//Rassemble les 3 "mémoires" dans un objet JavaScript
 
     try {
       const reponse = await fetch('https://portfolio-laurent-ahlsweh.onrender.com/api/contact', {//Envoie au serveur Backend
@@ -32,7 +32,7 @@ const Contact = () => {
 
       setFeedback(resultat.succes)//Si OK
       
-      setNom('')//Vide champs
+      setNom('')//Vide les champs
       setEmail('')
       setMessage('')
 
@@ -105,7 +105,7 @@ const Contact = () => {
 
           {/*Si feedback pas vide, affiche : */}
           {feedback && (
-              // Je rajoute une classe dynamique : "success" si le mot "succès" est dans le texte, "error" sinon
+              //Ajoute classe dynamiquement : "success" si le mot "succès" est dans le texte, "error" sinon
               <p className={feedback.includes('succès') ? "contact_feedback success" : "contact_feedback error"}>
                 {feedback}
               </p>
