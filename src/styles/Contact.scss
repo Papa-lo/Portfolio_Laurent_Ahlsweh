@@ -52,11 +52,13 @@
     border-radius: 4px;
     font-size: 1rem;
     font-weight: 600;
-    text-transform: none;//Empêche MUI de mettre tout en majuscules
+    text-transform: none;//Empêche majuscules MUI
     margin-top: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
 
     &:hover {//Survol
-      background-color: #C0392B;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
     }
   }
 }

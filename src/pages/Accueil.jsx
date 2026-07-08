@@ -12,10 +12,10 @@ const Accueil = () => {//Création composant page d'accueil
       </Helmet>
 
       <div className="hero_container">
-        <h1 className="hero_title">Bonjour, je suis Laurent Ahlsweh</h1>
-        <h2 className="hero_subtitle">Développeur Web Junior passionné</h2>
+        <h1 className="hero_title">Hello !</h1>
+        <h2 className="hero_subtitle">Bienvenu sur mon portfolio de Développeur Web "Junior😂" passionné !</h2>
         <p className="hero_text">
-          Bienvenu sur mon portfolio. Vous y trouverez mes projets de formation réalisés avec soin et découvrirez mon approche du développement Web : propre, accessible et surtout, pensé pour l'utilisateur.
+        Vous y trouverez mes projets de formation réalisés avec soin et découvrirez mon approche du développement Web : propre, accessible et surtout, pensé pour l'utilisateur.
         </p>
         <NavLink to="/projets" className="hero_AcLink">
           Découvrir mes projets

@@ -15,7 +15,7 @@ const APropos = () => {//Création composant page A propos
         <h2>A propos de moi</h2>
         <article className="a-propos_acte">
           <h3>Qui suis-je ?</h3>
-          <p>Né "un peu" avant l’an 2000, les technologies informatiques et leurs évolutions ont toujours suscité un grand intérêt pour moi. Après plus de 20 ans de carrière dans le bâtiment, j'ai choisi de relever le défi de me reconvertir dans la programmation pour allier mes centres d’intérêt à un nouveau domaine d'expertise.</p>
+          <p>Né "un peu 😂" avant l’an 2000, les technologies informatiques et leurs évolutions ont toujours suscité un grand intérêt pour moi. Après plus de 20 ans de carrière dans le bâtiment, j'ai choisi de relever le défi de me reconvertir dans la programmation pour allier mes centres d’intérêt à un nouveau domaine d'expertise.</p>
         </article>
         <article className="a-propos_acte">
           <h3>Mon parcours</h3>
