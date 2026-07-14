@@ -8,6 +8,7 @@ import Projets from "./pages/Projets"
 import Contact from "./pages/Contact"
 import ProjetDetail from "./pages/ProjetDetail"
 import Competences from "./pages/Competences"
+import Cv from "./pages/Cv"//Import composant CV
 import "./styles/App.scss"
 
 
@@ -30,6 +31,7 @@ const App = () => {//Création composant principal application
           <Route path="/projets" element={<Projets />} />
           <Route path="/Competences" element={<Competences/>} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/cv" element={<Cv />} />
         </Routes>
       </main>
 

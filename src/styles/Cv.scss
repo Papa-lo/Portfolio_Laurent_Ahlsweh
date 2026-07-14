@@ -1,0 +1,374 @@
+/*CV*/
+.cv address {
+  font-style: normal;
+}
+
+/*BOUTON EXPORT PDF*/
+.cv-export-btn {
+  background-color: #C0392B;
+  color: #FFFFFF;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  }
+}
+
+/*CONTENEUR CV — Format A4 + centré à l'écran*/
+.cv {
+  width: 210mm;
+  height: 297mm;
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-columns: 64mm 1fr;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  color: #1A1A1A;
+}
+
+/*Centrage à l'écran uniquement*/
+@media screen {
+  .cv {
+    margin: 2rem auto;
+  }
+}
+
+/*SIDEBAR*/
+.cv-sidebar {
+  background-color: #2C3E50;
+  color: #FFFFFF;
+  padding: 18mm 6mm 12mm 6mm;
+  display: flex;
+  flex-direction: column;
+  gap: 4.5mm;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+/*Photo ronde*/
+.cv-photo {
+  width: 24mm;
+  height: 24mm;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  margin-bottom: 1mm;
+  flex-shrink: 0;
+}
+
+.cv-sidebar section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5mm;
+}
+
+.cv-sidebar h2 {
+  font-size: 9px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  padding-bottom: 1.5mm;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 0.5mm;
+}
+
+.cv-sidebar p {
+  font-size: 9.5px;
+  line-height: 1.7;
+}
+
+.cv-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 2mm;
+  font-size: 8.5px;
+  line-height: 1.7;
+}
+
+/* Pastilles compétences*/
+.cv-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5mm;
+}
+
+.cv-tag {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
+  font-size: 7.5px;
+  padding: 0.8mm 2mm;
+  border-radius: 20px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.cv-tags-categorie {
+  font-size: 8px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  margin-top: 0.5mm;
+}
+
+.cv-langue-ligne {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 8.5px;
+}
+
+.cv-langue-niveau {
+  font-size: 8px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.cv-permis {
+  font-size: 8.5px;
+}
+
+/*ZONE PRINCIPALE*/
+.cv-main {
+  padding: 18mm 7mm 12mm 7mm;
+  display: flex;
+  flex-direction: column;
+  gap: 10mm;
+}
+
+/* En-tête nom + poste */
+.cv-entete h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #2C3E50;
+  line-height: 1.1;
+}
+
+.cv-entete p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #C0392B;
+  margin-top: 1.5mm;
+}
+
+/* Titres sections*/
+.cv-main h2 {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #2C3E50;
+  padding-bottom: 1.5mm;
+  border-bottom: 2px solid #C0392B;
+  margin-bottom: 0.5mm;
+}
+
+.cv-main p {
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.cv-profil p {
+  color: #4A4A4A;
+}
+
+/*PROJETS*/
+.cv-projet {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5mm;
+  padding-bottom: 1.5mm;
+}
+
+.cv-projet:last-child {
+  padding-bottom: 0;
+}
+
+.cv-projet-entete {
+  display: flex;
+  align-items: baseline;
+  gap: 2mm;
+  flex-wrap: wrap;
+}
+
+.cv-projet-nom {
+  font-size: 10px;
+  font-weight: 600;
+  color: #2C3E50;
+}
+
+.cv-projet-description {
+  font-size: 8.5px;
+  color: #4A4A4A;
+  line-height: 1.7;
+}
+
+/* Pastilles projets*/
+.cv-projet-tags .cv-tag {
+  background-color: #F8F9FA;
+  color: #2C3E50;
+  font-size: 7px;
+  padding: 0.5mm 1.5mm;
+  border-radius: 20px;
+}
+
+/*FORMATION*/
+.cv-formation-principale {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3mm;
+  padding-bottom: 1.5mm;
+}
+
+.cv-formation-entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 2mm;
+}
+
+.cv-formation-titre {
+  font-size: 10px;
+  font-weight: 600;
+  color: #2C3E50;
+}
+
+.cv-formation-date {
+  font-size: 8px;
+  color: #4A4A4A;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.cv-formation-sousTitre {
+  font-size: 8.5px;
+  color: #4A4A4A;
+}
+
+.cv-formation-detail {
+  font-size: 8.5px;
+  color: #4A4A4A;
+  line-height: 1.7;
+}
+
+.cv-formations-anciennes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5mm;
+}
+
+.cv-formation-ligne {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 8.5px;
+}
+
+.cv-formation-ligne span:first-child {
+  color: #1A1A1A;
+}
+
+.cv-formation-ligne span:last-child {
+  color: #4A4A4A;
+  font-size: 8px;
+}
+
+/*EXPÉRIENCES*/
+.cv-experience {
+  display: grid;
+  grid-template-columns: 22mm 1fr;
+  gap: 2mm;
+  padding-bottom: 1.5mm;
+}
+
+.cv-experience:last-child {
+  padding-bottom: 0;
+}
+
+.cv-experience-dates {
+  font-size: 8px;
+  color: #C0392B;
+  font-weight: 600;
+  padding-top: 0.3mm;
+  white-space: nowrap;
+}
+
+.cv-experience-contenu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3mm;
+}
+
+.cv-experience-titre {
+  font-size: 10px;
+  font-weight: 600;
+  color: #2C3E50;
+}
+
+.cv-experience-entreprise {
+  font-size: 8.5px;
+  color: #4A4A4A;
+  font-style: italic;
+}
+
+.cv-experience-description {
+  font-size: 8.5px;
+  color: #4A4A4A;
+  line-height: 1.7;
+}
+
+/*IMPRESSION — A4*/
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  .cv {
+    box-shadow: none;
+    width: 210mm;
+    height: 297mm;
+  }
+
+  .cv-export-btn {
+    display: none !important;
+  }
+
+  .main-header {
+    display: none !important;
+  }
+
+  .main-footer {
+    display: none !important;
+  }
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 820px) {
+  .cv {
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+
+  .cv-sidebar {
+    padding: 2rem;
+  }
+
+  .cv-main {
+    padding: 2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cv-export-btn {
+    transition: none;
+  }
+}
