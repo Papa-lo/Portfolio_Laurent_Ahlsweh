@@ -26,14 +26,30 @@ function Cv() {
 
                 <img src="/images/maphoto.webp" alt="Photo de Laurent Ahlsweh" className="cv-photo"/>
 
-                <section>
+                    <section>
                     <h2>Contact</h2>
                     <p>{donneesPersonnelles.localisation}</p>
-                    <p>{donneesPersonnelles.telephone}</p>
-                    <p>{donneesPersonnelles.email}</p>
-                    <p>{donneesPersonnelles.github}</p>
-                    <p>{donneesPersonnelles.portfolio}</p>
-                </section>
+                    <p>
+                        <a href={`tel:${donneesPersonnelles.telephone}`} className="cv-lien">
+                        {donneesPersonnelles.telephone}
+                        </a>
+                    </p>
+                    <p>
+                        <a href={`mailto:${donneesPersonnelles.email}`} className="cv-lien">
+                        {donneesPersonnelles.email}
+                        </a>
+                    </p>
+                    <p>
+                        <a href={`https://${donneesPersonnelles.github}`} target="_blank" rel="noopener noreferrer" className="cv-lien">
+                        {donneesPersonnelles.github}
+                        </a>
+                    </p>
+                    <p>
+                        <a href={`https://${donneesPersonnelles.portfolio}`} target="_blank" rel="noopener noreferrer" className="cv-lien">
+                        {donneesPersonnelles.portfolio}
+                        </a>
+                    </p>
+                    </section>
 
                 <section>
                     <h2>Compétences</h2>
